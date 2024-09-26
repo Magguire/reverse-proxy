@@ -1,0 +1,15 @@
+services:
+  nginx:
+    restart: always
+    container_name: nginx-proxy  
+    image: nginx:latest
+      #ports:
+      #- "80:80"
+      #- "443:443"
+    network_mode: host
+    volumes:
+      # - local:container
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+      - /var/log:/logs
+
