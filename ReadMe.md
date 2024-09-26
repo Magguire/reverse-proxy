@@ -132,7 +132,7 @@ docker compose up --build -d
 
 ### Points to note
 
-- In order to have readable request logs, you can use the following to dump the logs to another file:
+1. In order to have readable request logs, you can use the following to dump the logs to another file:
 
 
 ```
@@ -148,13 +148,13 @@ The above command uses sed package to:
 
 
 
-- To stop the docker container, run the following command:
+2. To stop the docker container, run the following command:
 
 ```
 docker compose down
 ```
 
 
-- nginx.conf and default.conf files can be edited to include other custom logging formats and location paths respectively as needed. After saving changes, stop  and rerun the container to rewrite the files.
+3. nginx.conf and default.conf files can be edited to include other custom logging formats and location paths respectively as needed. After saving changes, stop  and rerun the container to rewrite the files.
 
 
